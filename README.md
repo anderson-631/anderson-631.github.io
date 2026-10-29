@@ -22,7 +22,7 @@ python -m http.server
 
 then open http://localhost:8000. (Or use the "Live Server" extension in VS Code.)
 
-## Replace the TO1 thumbnail
+## Replace the Tapeout 1 thumbnail
 
 Save your screenshot as `images/to1_thumbnail.png`, overwriting the placeholder.
 If you save it as a different name or format (e.g. `.jpg`), update the `src` of
