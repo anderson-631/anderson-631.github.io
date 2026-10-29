@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StackDAQ — Anderson He</title>
+  <meta name="description" content="StackDAQ: a dual-IMU data acquisition board that measures rocket roll rate.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <!-- 3D viewer (Google's model-viewer) -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.3.1/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <div class="page">
+
+    <header class="site-header">
+      <a class="site-title" href="index.html">
+        <span class="site-name">Anderson He</span>
+        <span class="site-subtitle">Electrical Engineering @ Georgia Tech</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" aria-current="page">Portfolio</a>
+        <a href="https://www.linkedin.com/in/anderson-he-b4a6a6266" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="project-title">StackDAQ</h1>
+      <p class="project-meta">Georgia Tech Experimental Rocketry · Fall 2025</p>
+
+      <model-viewer
+        src="models/STACKDAQ.glb"
+        alt="3D model of the StackDAQ board"
+        camera-controls
+        camera-orbit="0deg 55deg auto"
+        auto-rotate
+        touch-action="pan-y"
+        environment-image="neutral"
+        shadow-intensity="0.6">
+      </model-viewer>
+
+      <div class="project-body">
+        <p>Accurate measurement of a rocket’s roll rate, the angular velocity with which it rotates about its central axis, is both important and expensive to obtain for high speeds. Because Georgia Tech’s Experimental Rocketry student organization relies on spin stabilization for our sounding rockets, roll rate measurement is a must and was traditionally done with a capable but costly gyroscope.</p>
+        <p>My aim was to accomplish this requirement with less when designing this data acquisition board. Equipped with two inertial measurement units (IMUs) that are precisely spaced to optimize the tradeoff between dynamic range and resolution, the StackDAQ fuses the linear accelerations measured by both IMUs to determine the roll rate up to 20&nbsp;Hz.</p>
+      </div>
+
+      <section class="skills">
+        <h2 class="section-label">Skills</h2>
+        <ul class="tags">
+          <li>Altium</li>
+          <li>Embedded C</li>
+          <li>Benchtop Electronics</li>
+        </ul>
+      </section>
+
+      <!-- Keep this list in sync by hand: one <li> per other project. -->
+      <nav class="other-projects">
+        <h2 class="section-label">Other Projects</h2>
+        <ul>
+          <li><a href="to1.html">TO1 Board</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer class="site-footer">© 2026 Anderson He</footer>
+
+  </div>
+</body>
+</html>
